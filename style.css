@@ -24,7 +24,7 @@ header {
 
 .navbar {
     background-color: #333;
-    color: #fff;
+    color: #2A9D8F;
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
@@ -46,18 +46,18 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     animation: logoAnimation 1s ease infinite alternate; /* Apply the animation */
-    color: #333; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes logoAnimation {
     from {
-        transform: scale(1); /* Initial scale */
-        color: #333; /* Initial text color */
+        transform: scale(1);
+        color: #333;
     }
     to {
-        transform: scale(1.1); /* Scale up */
-        color: #ff6f61; /* Changed text color */
+        transform: scale(1.1);
+        color: #2A9D8F;
     }
 }
 
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffb6c1;
+    color: #2A9D8F;
 }
 
 .search {
@@ -123,11 +123,11 @@ nav ul li a:hover {
 }
 
 .search button:hover {
-    color: #ffb6c1;
+    color: #2A9D8F;
 }
 
 .hero {
-    background-color: #ffb6c1;
+    background-color: #2A9D8F;
     padding: 70px 60px;
     display: flex;
     align-items: center;
@@ -137,12 +137,12 @@ nav ul li a:hover {
 
 .hero h1 {
     font-size: 48px;
-    color: #333;
+    color: #fff;
 }
 
 .hero p {
     font-size: 24px;
-    color: #333;
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -194,12 +194,12 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #ffb6c1;
+    background-color: #2A9D8F;
 }
 
 
 .special-offers-container {
-    background-color: #ffb6c1;
+    background-color: #2A9D8F;
     padding: 40px 0;
     text-align: center;
 }
@@ -255,7 +255,7 @@ footer .inner-container {
 }
 
 .testimonials-container {
-    background-color: #ffb6c1; 
+    background-color: #2A9D8F; 
     display: flex;
     justify-content: center;
 }
@@ -326,7 +326,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #ffb6c1;
+    background-color: #2A9D8F;
 }
 
 .submit-btn:active {
@@ -368,7 +368,7 @@ footer {
 
 .footer-links a:hover,
 .social-links a:hover {
-    color: #ffb6c1;
+    color: #2A9D8F;
 }
 
 .contact-details p {
@@ -395,7 +395,7 @@ footer {
 }
 
 .newsletter-form button:hover {
-    background-color: #ffb6c1;
+    background-color: #2A9D8F;
 }
 
 @media screen and (max-width: 1300px) {
@@ -414,7 +414,6 @@ footer {
     }
 }
 
-/* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
     .inner-container {
         flex-direction: column;
