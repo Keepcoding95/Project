@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BOOKLAND - About</title>
-        <meta charset="UTF8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </head>
-    <body>
 
-        <header>
-            <div class="navbar">
-                <div class="logo">
-                    <a href>BOOKLAND</a>
-                </div>
-                <nav>
+<head>
+    <title>BOOKLAND - About</title>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html">BOOKLAND</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html" style="color: #2A9D8F;">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p>Welcome to My Bookstore. Learn more about us.</p>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="row">
+            <div class="inner-container">
+                <h2>Our Story</h2>
+                <p>Welcome to our bookstore, where every page holds a world of
+                    possibilities and every story whispers secrets waiting to be
+                    discovered.</p>
+                <p>At our bookstore, we believe in the magic of literature – in
+                    the way a well-worn book can transport you to distant lands,
+                    in the way words on a page can stir emotions deep within
+                    your soul.</p>
+                <p>Here, you'll find more than just books – you'll find
+                    community, camaraderie, and a shared love for the written
+                    word. From author signings to book clubs, from literary
+                    events to cozy reading nooks, there's always something
+                    exciting happening within our walls.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="inner-container flex-row">
+                <div class="footer-links">
+                    <h3>Links</h3>
                     <ul>
                         <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html" style="color: #2A9D8F;">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav>
-                <div class="search">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit">Go</button>
-                </div> 
-            </div>
-            <div class="hero">
-                <div class="hero-content">
-                    <h1>About Us</h1>
-                    <p>Welcome to My Bookstore. Learn more about us.</p>
                 </div>
-            </div>
-        </header>
-        <div class="main-content">
-            <div class="row">
-                <div class="inner-container">
-                    <h2>Our Story</h2>
-                    <p>Welcome to our bookstore, where every page holds a world of
-                        possibilities and every story whispers secrets waiting to be
-                        discovered.</p>
-                    <p>At our bookstore, we believe in the magic of literature – in
-                        the way a well-worn book can transport you to distant lands,
-                        in the way words on a page can stir emotions deep within
-                        your soul.</p>
-                    <p>Here, you'll find more than just books – you'll find
-                        community, camaraderie, and a shared love for the written
-                        word. From author signings to book clubs, from literary
-                        events to cozy reading nooks, there's always something
-                        exciting happening within our walls.</p>
+
+                <div class="social-links">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i>
+                                Facebook</a></li>
+                        <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank"><i
+                                    class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                                Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter-form">
+                    <h3>Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="row">
-                <div class="inner-container flex-row">
-                    <div class="footer-links">
-                        <h3>Links</h3>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                
-                    <div class="social-links">
-                        <h3>Follow us</h3>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        </ul>
-                    </div>
-            
-                    <div class="newsletter-form">
-                        <h3>Newsletter</h3>
-                        <form action="#" method="post">
-                            <input type="email" name="email" placeholder="Your email address">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div> 
-        </footer>   
-    </body>
+    </footer>
+</body>
+
 </html>
