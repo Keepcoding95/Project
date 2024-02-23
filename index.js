@@ -14,40 +14,60 @@
 //     setTimeout(showSlides, 2000);
 // }
 
+// Define the slide index variable within the showSlides function
 let slideIndex = 0;
-showSlides();
+let timer;
 
 function showSlides() {
-    let i;
     const slides = document.querySelectorAll('.slideshow-container .item');
-    const dots = document.querySelectorAll('.slideshow-container .dot');
+    const dots = document.querySelectorAll('.dot');
 
-    for (i = 0; i < slides.length; i++) {
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    // Display the next set of slides
+    for (let i = slideIndex; i < slideIndex + 4; i++) {
+        if (slides[i]) {
+            slides[i].style.display = "block";
+        }
     }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    // Update active dot
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    dots[Math.floor(slideIndex / 4)].classList.add("active");
+
+    // Move to the next set of slides
+    slideIndex += 4;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0; // Start over from the beginning
     }
 
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-
-    setTimeout(showSlides, 2000);
+    // Call showSlides() again after a certain interval
+    timer = setTimeout(showSlides, 2000); // Change interval as needed
 }
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    clearTimeout(timer);
+    showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    clearTimeout(timer);
+    showSlides((slideIndex = n - 1)); // Adjust index to match array index
 }
+
+showSlides();
+
+
+
+
+
+
+
 
 
 
