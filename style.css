@@ -152,12 +152,15 @@ nav ul li a:hover {
 }
 
 .items {
+  row-gap: 30px;
+  flex-wrap: wrap;
   display: flex;
   margin: 40px;
   column-gap: 40px;
 }
 
 .item {
+  flex: 1 0 calc(25% - 40px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,6 +333,11 @@ textarea {
   transform: translateY(2px);
 }
 
+#submission-counter {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -396,7 +404,7 @@ footer {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 350px;
+  /* max-width: 350px; */
   position: relative;
   margin: auto;
 }
@@ -461,7 +469,6 @@ footer {
 .dot:hover {
   background-color: #717171;
 }
-
 
 
 

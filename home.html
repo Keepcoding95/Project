@@ -3,12 +3,12 @@
 
 <head>
     <title>BOOKLAND - Home</title>
-    <meta charset="UTF8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <script src="index.js" defer></script>
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
             <div class="inner-container">
                 <div class="list">
                     <h2>Featured Books</h2>
-                    <div class="items">
+                    <div class="items" id="books-container">
                         <div class="item">
                             <img src="img/lord1.jpeg" alt="The Fellowship of the ring">
                             <h3>The Fellowship of the ring</h3>
@@ -61,8 +61,14 @@
                             <p>J.R.R Tolkien</p>
                             <p>$19.99</p>
                         </div>
+                        <div class="item">
+                            <img src="img/lord3.jpeg" alt="The Return of the King">
+                            <h3>The Return of the King</h3>
+                            <p>J.R.R Tolkien</p>
+                            <p>$19.99</p>
+                        </div>
                     </div>
-                    <a href="" class="btn">View All Books</a>
+                    <a href="" class="btn">View More Books</a>
                 </div>
             </div>
         </div>
@@ -127,8 +133,6 @@
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>
         </div>
@@ -151,13 +155,6 @@
                                 never knew existed. The recommendations feature has been invaluable in helping me
                                 explore new genres and authors. I'm grateful for the excellent service and the joy of
                                 discovering captivating stories.</blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote>I can't thank this online bookstore enough for making my reading journey so
-                                fulfilling! The user-friendly interface, combined with personalized recommendations, has
-                                enhanced my reading experience beyond measure. Whether I'm searching for a bestseller or
-                                a niche title, I can always count on this bookstore to deliver. It's become my go-to
-                                destination for all things literary!</blockquote>
                         </div>
                         <div class="item">
                             <blockquote>I can't thank this online bookstore enough for making my reading journey so
